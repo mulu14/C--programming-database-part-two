@@ -1,0 +1,26 @@
+CC = gcc
+FLAGS = -Wall -std=c11 -ggdb
+
+test: test.o tree.o list.o ware.o shelf.o compare.o
+	$(CC) $(FLAGS) -o $@ $^
+
+tree: tree.o list.o ware.o shelf.o compare.o
+	$(CC) $(FLAGS) -o $@ $^
+shelf: shelf.o 
+	$(CC) $(FLAGS) -o $@ -c $^
+compare: compare.o
+	$(CC) $(FLAGS) -o $@ -c$^
+list: list.o shelf.o 
+	$(CC) $(FLAGS) -o $@ -c $^
+ware: ware.o list.o
+	$(CC) $(FLAGS) -o $@ -c $^
+
+clean:
+	rm -f   
+	rm -f *.o 
+	rm -rf *.dSYM  
+	rm -f *~
+
+
+
+ 

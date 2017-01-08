@@ -1,0 +1,232 @@
+\hypertarget{list_8h}{}\section{list.\+h File Reference}
+\label{list_8h}\index{list.\+h@{list.\+h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}shelf.\+h\char`\"{}}\\*
+Include dependency graph for list.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{list_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{list_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structlist}{list} \hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Define struct list in your .c file not here! (why?) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$ \hyperlink{list_8h_a9dd3eafdb56dcc64689f78fb4acdff3f}{list\+\_\+new} ()
+\item 
+bool \hyperlink{list_8h_a787a27edbde0d113b275c551ced4615d}{list\+\_\+append} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$\hyperlink{structlist}{list}, void $\ast$address)
+\item 
+bool \hyperlink{list_8h_af55b49002b1eac150e784108f012884d}{list\+\_\+prepend} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$\hyperlink{structlist}{list}, void $\ast$address)
+\item 
+bool \hyperlink{list_8h_a671345471302b32ba2f6e12584ccdcc9}{list\+\_\+insert} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$\hyperlink{structlist}{list}, int index, void $\ast$address)
+\item 
+bool \hyperlink{list_8h_afce3bbc1de4b555ecca0e087fef92c34}{list\+\_\+remove} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$\hyperlink{structlist}{list}, int index, void $\ast$address)
+\item 
+void $\ast$ \hyperlink{list_8h_a0278130929496f5e6996e52eff60f342}{list\+\_\+get} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$\hyperlink{structlist}{list}, int index)
+\item 
+void $\ast$ \hyperlink{list_8h_a17db498966456a086b9a49ba695a3ee0}{list\+\_\+first} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$\hyperlink{structlist}{list})\hypertarget{list_8h_a17db498966456a086b9a49ba695a3ee0}{}\label{list_8h_a17db498966456a086b9a49ba695a3ee0}
+
+\begin{DoxyCompactList}\small\item\em A convenience for list\+\_\+get(list, 0) \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{list_8h_ab7f6d8c5a8786a63042d185816b0e0a7}{list\+\_\+last} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$\hyperlink{structlist}{list})\hypertarget{list_8h_ab7f6d8c5a8786a63042d185816b0e0a7}{}\label{list_8h_ab7f6d8c5a8786a63042d185816b0e0a7}
+
+\begin{DoxyCompactList}\small\item\em A convenience for list\+\_\+get(list, -\/1) \end{DoxyCompactList}\item 
+int \hyperlink{list_8h_a95d76edca6b694b79ec54acd31fe0b82}{list\+\_\+length} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$\hyperlink{structlist}{list})
+\item 
+bool {\bfseries isexist} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$head, void $\ast$address)\hypertarget{list_8h_aa0217319f306eccce6dc82f70dd70a49}{}\label{list_8h_aa0217319f306eccce6dc82f70dd70a49}
+
+\item 
+void $\ast$ {\bfseries return\+\_\+shelf} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$head)\hypertarget{list_8h_abfa970c96df9ea46198b75ef9988353f}{}\label{list_8h_abfa970c96df9ea46198b75ef9988353f}
+
+\item 
+void {\bfseries print\+\_\+link\+\_\+list} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$head)\hypertarget{list_8h_ae01d4f5455db767c41da137eb1b9b373}{}\label{list_8h_ae01d4f5455db767c41da137eb1b9b373}
+
+\item 
+void $\ast$ {\bfseries list\+Getshelf} (\hyperlink{list_8h_a15376354e4e8b4f1732e9df17f30786c}{list\+\_\+t} $\ast$head, int index)\hypertarget{list_8h_a23779d12ed4bc50fb57634a578979340}{}\label{list_8h_a23779d12ed4bc50fb57634a578979340}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Tobias Wrigstad 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2015-\/08-\/28 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]None known. But this code is untested so there are likely bigs in it. \end{DoxyRefDesc}
+
+
+\subsection{Typedef Documentation}
+\index{list.\+h@{list.\+h}!list\+\_\+t@{list\+\_\+t}}
+\index{list\+\_\+t@{list\+\_\+t}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+t}{list_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf list} {\bf list\+\_\+t}}\hypertarget{list_8h_a15376354e4e8b4f1732e9df17f30786c}{}\label{list_8h_a15376354e4e8b4f1732e9df17f30786c}
+
+
+Define struct list in your .c file not here! (why?) 
+
+!! O\+BS -- du kommer att behöva ändra lite i denna fil. !! Detta är en lista som endast hanterar heltal. Men det !! kommer inte att räcka för oss här eftersom vi skall ha !! andra data (vilka??) i vår (enda) lista. 
+
+\subsection{Function Documentation}
+\index{list.\+h@{list.\+h}!list\+\_\+append@{list\+\_\+append}}
+\index{list\+\_\+append@{list\+\_\+append}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+append(list\+\_\+t $\ast$list, void $\ast$address)}{list_append(list_t *list, void *address)}}]{\setlength{\rightskip}{0pt plus 5cm}bool list\+\_\+append (
+\begin{DoxyParamCaption}
+\item[{{\bf list\+\_\+t} $\ast$}]{list, }
+\item[{void $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a787a27edbde0d113b275c551ced4615d}{}\label{list_8h_a787a27edbde0d113b275c551ced4615d}
+Inserts a new element at the end of the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & pointer to the list \\
+\hline
+{\em elem} & the integer to be appended \\
+\hline
+\end{DoxyParams}
+\index{list.\+h@{list.\+h}!list\+\_\+get@{list\+\_\+get}}
+\index{list\+\_\+get@{list\+\_\+get}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+get(list\+\_\+t $\ast$list, int index)}{list_get(list_t *list, int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ list\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{{\bf list\+\_\+t} $\ast$}]{list, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a0278130929496f5e6996e52eff60f342}{}\label{list_8h_a0278130929496f5e6996e52eff60f342}
+Returns the element at a given index 
+\begin{DoxyParams}{Parameters}
+{\em list} & pointer to the list \\
+\hline
+{\em index} & the index to be returns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the element at index index 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+insert@{list\+\_\+insert}}
+\index{list\+\_\+insert@{list\+\_\+insert}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+insert(list\+\_\+t $\ast$list, int index, void $\ast$address)}{list_insert(list_t *list, int index, void *address)}}]{\setlength{\rightskip}{0pt plus 5cm}bool list\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{{\bf list\+\_\+t} $\ast$}]{list, }
+\item[{int}]{index, }
+\item[{void $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a671345471302b32ba2f6e12584ccdcc9}{}\label{list_8h_a671345471302b32ba2f6e12584ccdcc9}
+Inserts a new element at a given index.
+
+Valid indexes are \mbox{[}0..size\mbox{]}.
+
+Example\+:
+
+list\+\_\+t $\ast$l = \hyperlink{list_8h_a9dd3eafdb56dcc64689f78fb4acdff3f}{list\+\_\+new()}; // l == \mbox{[}\mbox{]} list\+\_\+insert(l, 0, 42); // l == \mbox{[}42\mbox{]} list\+\_\+insert(l, 0, 43); // l == \mbox{[}43, 42\mbox{]} list\+\_\+insert(l, 1, 44); // l == \mbox{[}43, 44, 42\mbox{]} list\+\_\+insert(l, 5, 45); // l == \mbox{[}43, 44, 42\mbox{]}
+
+The last case fails (and returns false) because size is 3, meaning 5 is not a valid index.
+
+Note that insert at index 0 is the same as prepend and insert index size is the same as append.
+
+Negative indexes should be supported\+:
+
+list\+\_\+insert(l, -\/1, 45); // l == \mbox{[}43, 44, 42, 45\mbox{]}
+
+A positive index can be calculated from a negative like this\+: pos\+\_\+i = size + 1 + neg\+\_\+i.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & pointer to the list \\
+\hline
+{\em index} & the index for elem to be inserted at \\
+\hline
+{\em elem} & the integer to be prepended \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if succeeded, else false 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+length@{list\+\_\+length}}
+\index{list\+\_\+length@{list\+\_\+length}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+length(list\+\_\+t $\ast$list)}{list_length(list_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}int list\+\_\+length (
+\begin{DoxyParamCaption}
+\item[{{\bf list\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a95d76edca6b694b79ec54acd31fe0b82}{}\label{list_8h_a95d76edca6b694b79ec54acd31fe0b82}
+Returns the length of the list. It is undefined whether the length is calculated in O(n) time or whether there is a size counter in the list object that is manipulated by insert, remove, etc. 
+\begin{DoxyParams}{Parameters}
+{\em list} & the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of list 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+new@{list\+\_\+new}}
+\index{list\+\_\+new@{list\+\_\+new}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+new()}{list_new()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf list\+\_\+t}$\ast$ list\+\_\+new (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_a9dd3eafdb56dcc64689f78fb4acdff3f}{}\label{list_8h_a9dd3eafdb56dcc64689f78fb4acdff3f}
+Creates a new list
+
+\begin{DoxyReturn}{Returns}
+\+: empty list 
+\end{DoxyReturn}
+\index{list.\+h@{list.\+h}!list\+\_\+prepend@{list\+\_\+prepend}}
+\index{list\+\_\+prepend@{list\+\_\+prepend}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+prepend(list\+\_\+t $\ast$list, void $\ast$address)}{list_prepend(list_t *list, void *address)}}]{\setlength{\rightskip}{0pt plus 5cm}bool list\+\_\+prepend (
+\begin{DoxyParamCaption}
+\item[{{\bf list\+\_\+t} $\ast$}]{list, }
+\item[{void $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_af55b49002b1eac150e784108f012884d}{}\label{list_8h_af55b49002b1eac150e784108f012884d}
+Inserts a new element at the end of the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & pointer to the list \\
+\hline
+{\em elem} & the integer to be prepended \\
+\hline
+\end{DoxyParams}
+\index{list.\+h@{list.\+h}!list\+\_\+remove@{list\+\_\+remove}}
+\index{list\+\_\+remove@{list\+\_\+remove}!list.\+h@{list.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+remove(list\+\_\+t $\ast$list, int index, void $\ast$address)}{list_remove(list_t *list, int index, void *address)}}]{\setlength{\rightskip}{0pt plus 5cm}bool list\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{{\bf list\+\_\+t} $\ast$}]{list, }
+\item[{int}]{index, }
+\item[{void $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{list_8h_afce3bbc1de4b555ecca0e087fef92c34}{}\label{list_8h_afce3bbc1de4b555ecca0e087fef92c34}
+Removes an element from a list.
+
+Example\+: (assume l == \mbox{[}43, 44, 42, 45\mbox{]})
+
+int elem; list\+\_\+remove(l, 1, \&elem); // l = \mbox{[}43, 42, 45\mbox{]}, elem == 44 list\+\_\+remove(l, -\/1, \&elem); // l = \mbox{[}43, 42\mbox{]}, elem == 45
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & pointer to the list \\
+\hline
+{\em index} & the index to be removed \\
+\hline
+{\em elem} & a pointer to where the element can be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if succeeded, else 
+\end{DoxyReturn}
